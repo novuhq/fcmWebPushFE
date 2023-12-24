@@ -27,7 +27,7 @@ function App() {
   const onClickHandler = async (e) => {
     e.preventDefault()
     // console.log('clicked')
-    await axios.post('http://localhost:3001/sendNotif/create', { title, body })
+    await axios.post('https://fcmwebpushbe.onrender.com/sendNotif/create', { title, body })
     setBody('')
     setTitle('')
     // toast(title, body)
